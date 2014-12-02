@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="jquery.subwayMap-0.5.0.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+	<div class="subway-map" data-columns="12" data-rows="10" data-cellSize="40" data-legendId="legend" data-textClass="text" data-gridNumbers="true" data-grid="true" data-lineWidth="8">
+		<ul data-color="#000000" data-label="jQuery Widgets"> <!-- Pink color code is #ff4db2 -->
+			<li data-coords="2,2"></li>
+			<li data-coords="4,2"></li>
+			<li data-coords="4,7"></li>
+			<li data-coords="2,7"></li>
+			<li data-coords="2,2"></li>			
+		</ul>
+	</div>
+
+	<!-- <div id="legend"></div> -->
+
+	<script type="text/javascript">
+		$(".subway-map").subwayMap( { debug: true } );
+	</script>
+
+</body>
+
