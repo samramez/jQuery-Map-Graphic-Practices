@@ -1,40 +1,44 @@
-#start-apple{
-
+#start-apple ul {
+	visibility: hidden;
+	display: none;
 }
 
-#apple-meat{
-
+#apple-meat ul{
+	visibility: hidden;
+	display: none;
 }
 
-#meat-eggs{
-
+#meat-eggs ul {
+	visibility: hidden;
+	display: none;
 }
 
-#meat-juice{
-
+#meat-juice ul {
+	visibility: hidden;
+	display: none;
 }
 
-#eggs-juice{
-
+#eggs-juice ul{
+	visibility: hidden;
 }
 
-#juice-nuts{
-
+#juice-nuts ul{
+	visibility: hidden;
 }
 
-#start-nuts{
-
+#start-nuts ul{
+	visibility: hidden;
 }
 
-#nuts-cashier{
-
+#nuts-cashier ul{
+	visibility: hidden;
 }
 
-#eggs-cashier{
-
+#eggs-cashier ul{
+	visibility: hidden;
 }
 
-#start-apple{
+#start-apple ul{
 
 }
 

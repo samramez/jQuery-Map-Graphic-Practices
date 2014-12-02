@@ -7,15 +7,17 @@
 <!-- javaScript files for Map view -->
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
 <script type="text/javascript" src="js/jquery.subwayMap-0.5.0.js"></script>
-<script type="text/javascript" src="js/jquery.js"></script>
 
-<link rel="stylesheet" type="text/css" href="style.css">
 
-<body>
+
+<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<body style="display: none;" >
 	<div class="subway-map" data-columns="12" data-rows="10" data-cellSize="40" data-legendId="legend" data-textClass="text" data-gridNumbers="true" data-grid="true" data-lineWidth="8">
 		
 		<!-- drawing the column on the LEFT -->
-		<ul data-color="#000000" data-label="jQuery Widgets"> <!-- Pink color code is #ff4db2 -->
+		<ul style="display: none;" data-color="#000000" data-label="jQuery Widgets"> <!-- Pink color code is #ff4db2 -->
 			<li data-coords="2,2"></li>
 			<li data-coords="4,2"></li>
 			<li data-coords="4,7"></li>
@@ -24,7 +26,7 @@
 		</ul>
 
 		<!-- drawing the column on the RIGHT -->
-		<ul data-color="#000000" data-label="jQuery Widgets"> <!-- Pink color code is #ff4db2 -->
+		<ul  style="display: none;" data-color="#000000" data-label="jQuery Widgets"> <!-- Pink color code is #ff4db2 -->
 			<li data-coords="7,2"></li>
 			<li data-coords="9,2"></li>
 			<li data-coords="9,7"></li>
@@ -40,7 +42,7 @@
 		</ul>
 
 		<!-- drawing the store CASHIER -->
-		<ul data-color="#A901DB" data-label="jQuery Widgets"> <!-- Pink color code is #ff4db2 -->
+		<ul style="display: none;" data-color="#A901DB" data-label="jQuery Widgets"> <!-- Pink color code is #ff4db2 -->
 			<li data-coords="4.5,10" data-dir="E"></li>
 			<li data-coords="5.5,9">Cashier</li>
 			<li data-coords="6.5,10" data-dir="E"></li>			
@@ -72,7 +74,7 @@
 			</ul>
 
 			<!-- from MEAT to JUICE -->
-			<ul ide="meat-juice" data-color="#FFA1D6" data-label="jQuery Widgets"> 
+			<ul id="meat-juice" data-color="#FFA1D6" data-label="jQuery Widgets"> 
 				<li data-coords="8,1">Meat</li>
 				<li data-coords="2,1"></li>
 				<li data-coords="1,2" data-dir="W"></li>
@@ -124,17 +126,18 @@
 				<li data-coords="5.5,9" data-dir="W">Cashier</li>
 
 			</ul>
-
-
-
-
+		<!-- end of Path defining -->
 	</div>
+
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
 
 	<!-- <div id="legend"></div> -->
 
 	<script type="text/javascript">
 		$(".subway-map").subwayMap( { debug: true } );
 	</script>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
 
 </body>
 
