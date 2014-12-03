@@ -27,7 +27,7 @@ THE SOFTWARE.
     var plugin = {
 
         defaults: {
-            debug: false,
+            debug: true,
             grid: false
         },
 
