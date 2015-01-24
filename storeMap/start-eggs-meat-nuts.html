@@ -6,17 +6,17 @@
 
 <!-- javaScript files for Map view -->
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
-<script type="text/javascript" src="js/jquery.subwayMap-0.5.0.js"></script>
+<script type="text/javascript" src="../js/jquery.subwayMap-0.5.0.js"></script>
 
 
 
-<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="../js/jquery.js"></script>
 
-<link rel="stylesheet" type="text/css" href="css/mystyle.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="../css/mystyle.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
 
 <body>
-	<div class="subway-map" data-columns="12" data-rows="10" data-cellSize="40" data-legendId="legend" data-textClass="text" data-gridNumbers="true" data-grid="false" data-lineWidth="8">
+	<div class="subway-map" data-columns="12" data-rows="10" data-cellSize="40" data-legendId="legend" data-textClass="text" data-gridNumbers="true" data-grid="true" data-lineWidth="8">
 		
 		<!-- drawing the column on the LEFT -->
 		<ul style="display: none;" data-color="#000000" data-label="jQuery Widgets"> <!-- Pink color code is #ff4db2 -->
@@ -37,7 +37,7 @@
 		</ul>
 
 		<!-- drawing the store ENTRANCE -->
-		<ul data-color="#A901DB" data-label="jQuery Widgets"> <!-- Pink color code is #ff4db2 -->
+		<ul data-color="#A901DB" data-label="jQuery Widgets"> 
 			<li data-coords="10,10" data-dir="E"></li>
 			<li data-coords="11,9">Entrance</li>
 			<li data-coords="12,10" data-dir="E" ></li>	
@@ -86,20 +86,20 @@
 			</ul> -->
 
 			<!-- from EGGS to JUICE -->
-			<ul  id="eggs-juice" data-color="#FFA1D6" data-label="jQuery Widgets"> 
+			<!-- <ul  id="eggs-juice" data-color="#FFA1D6" data-label="jQuery Widgets"> 
 				<li data-coords="5.5,4">Eggs</li>
 				<li data-coords="5.5,2"></li>
 				<li data-coords="4.5,1" data-dir="N"></li>
 				<li data-coords="2,1"></li>
 				<li data-coords="1,2" data-dir="W"></li>
-				<li data-coords="1,3">Juice</li>
+				<i> data-coords="1,3">Juice</li>
 			</ul>
 
 			<!-- from JUICE to NUTS -->
-			<ul style="visibility: hidden;" id="juice-nuts" data-color="#FFA1D6" data-label="jQuery Widgets"> 
+			<!-- <ul style="visibility: hidden;" id="juice-nuts" data-color="#FFA1D6" data-label="jQuery Widgets"> 
 				<li data-coords="1,3">Juice</li>
 				<li data-coords="1,8">Nuts</li>
-			</ul>
+			</ul> -->
 
 			<!-- from START to NUTS -->
 			<!-- <ul id="start-nuts" data-color="#FFA1D6" data-label="jQuery Widgets"> 
@@ -116,10 +116,10 @@
 			</ul>
 
 			<!-- from EGGS to CASHIR -->
-			<!-- <ul id="eggs-cashier" data-color="#FFA1D6" data-label="jQuery Widgets"> 
+			<ul id="eggs-cashier" data-color="#FFA1D6" data-label="jQuery Widgets"> 
 				<li data-coords="5.5,4">Eggs</li>
 				<li data-coords="5.5,9">Cashier</li>
-			</ul> -->
+			</ul>
 
 			<!-- from APPLE to CASHIER -->
 			<!-- <ul id="start-apple" data-color="#FFA1D6" data-label="jQuery Widgets"> 
@@ -128,15 +128,24 @@
 				<li data-coords="10,8" data-dir="S" ></li>
 				<li data-coords="6.5,8"></li>
 				<li data-coords="5.5,9" data-dir="W">Cashier</li>
-
 			</ul> -->
+
+			<!--from Start to Eggs -->
+			<!-- <ul id="start-eggs" data-color="#FFA1D6" data-label="jQuery Widgets"> 
+				<li data-coords="11,9">Entrance</li>
+				<li data-coords="10,8" data-dir="N"></li>
+				<li data-coords="6.5,8"></li>
+				<li data-coords="5.5,7" data-dir="W"></li>
+				<li data-coords="5.5,4" data-dir="W">Eggs</li>
+			</ul> -->
+
 
 
 		<!-- end of Path defining -->
 	</div>
 
 	<script type="text/javascript">
-		$(".subway-map").subwayMap( { debug: true } );
+		$(".subway-map").subwayMap( { debug: false } );
 	</script>
 
 	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
